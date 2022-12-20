@@ -1,11 +1,13 @@
-name: Ruby
+name: CI
 
 on:
   push:
-    branches:
-      - main
-
+    branches: [ "main" ]
   pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
 
 jobs:
   build:
@@ -23,5 +25,12 @@ jobs:
       with:
         ruby-version: ${{ matrix.ruby }}
         bundler-cache: true
-    - name: Run the default task
-      run: bundle exec rake
+
+    - name: Install dependencies
+      run: make install
+
+    - name: Run tests
+      run: make test
+    
+    - name: Run linter
+      run: make lint
