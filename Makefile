@@ -1,4 +1,4 @@
-inslall:
+install:
 	bundle install
 
 lint:
