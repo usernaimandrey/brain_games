@@ -7,6 +7,8 @@ gemspec
 
 gem 'rake', '~> 13.0'
 
+gem 'zeitwerk', '~> 2.6', '>= 2.6.6'
+
 group :development do
   gem 'rubocop', '~> 1.7'
 

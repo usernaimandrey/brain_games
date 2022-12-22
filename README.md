@@ -1,4 +1,4 @@
-# BrainGemes
+# BrainGames
 
 [![CI](https://github.com/usernaimandrey/brain_games/actions/workflows/main.yml/badge.svg)](https://github.com/usernaimandrey/brain_games/actions/workflows/main.yml)
 

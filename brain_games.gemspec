@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require_relative 'lib/brain_gemes/version'
+require_relative 'lib/brain_games/version'
 
 Gem::Specification.new do |spec|
-  spec.name = 'brain_gemes'
-  spec.version = BrainGemes::VERSION
+  spec.name = 'brain_games'
+  spec.version = BrainGames::VERSION
   spec.authors = ['usernaimandrey']
   spec.email = ['anshlyapnikov@yandex.ru']
 

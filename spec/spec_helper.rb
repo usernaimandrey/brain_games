@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'brain_gemes'
+require 'brain_games'
 
 RSpec.configure do |config|
   config.example_status_persistence_file_path = '.rspec_status'
