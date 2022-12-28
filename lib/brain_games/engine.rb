@@ -13,7 +13,7 @@ module BrainGames
     def run
       puts('Welcome to the Brain Games!')
 
-      puts('May I have your name?')
+      print('May I have your name?: ')
 
       name = $stdin.gets.chop
       puts("Hello #{name}!")
@@ -21,7 +21,7 @@ module BrainGames
       ROUNDS.times do
         question, right_answer = game.run
 
-        puts("Question: #{question}")
+        print("Question: #{question} ?: ")
 
         answer = $stdin.gets.chop.downcase
 
