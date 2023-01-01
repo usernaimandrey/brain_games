@@ -21,7 +21,7 @@ module BrainGames
       ROUNDS.times do
         question, right_answer = game.run
 
-        print("Question: #{question} ?: ")
+        print("Question: #{question} ")
 
         answer = $stdin.gets.chop.downcase
 
