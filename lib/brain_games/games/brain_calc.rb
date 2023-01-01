@@ -9,7 +9,7 @@ module BrainGames
         OPERATIONS = %w[+ - *].freeze
 
         def show_game_rule
-          puts('What is the result of the expression?')
+          puts(I18n.t(:game_rule, scope: :calc))
         end
 
         def run

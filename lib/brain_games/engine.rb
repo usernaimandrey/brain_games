@@ -11,25 +11,25 @@ module BrainGames
     end
 
     def run
-      puts('Welcome to the Brain Games!')
+      puts(I18n.t(:greating))
 
-      print('May I have your name?: ')
+      print(I18n.t(:acquaintance))
 
       name = $stdin.gets.chop
-      puts("Hello #{name}!")
+      puts(I18n.t(:personal_greating, name: name))
       game.show_game_rule
       ROUNDS.times do
         question, right_answer = game.run
 
-        print("Question: #{question} ")
+        print(I18n.t(:question, question: question))
 
         answer = $stdin.gets.chop.downcase
 
-        puts("Your answer: #{answer}")
+        puts(I18n.t(:answer, answer: answer))
         if answer == right_answer
-          puts('Correct!')
+          puts(I18n.t(:correct))
         else
-          puts("#{answer} is wrong answer ;(. Correct answer was #{right_answer}.\nLet's try again, #{name}!")
+          puts(I18n.t(:no_correct, answer: answer, right_answer: right_answer, name: name))
           return
         end
       end

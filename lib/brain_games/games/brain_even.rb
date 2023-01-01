@@ -7,7 +7,7 @@ module BrainGames
     class BrainEven
       class << self
         def show_game_rule
-          puts('Answer "yes" if the number is even, otherwise answer "no".')
+          puts(I18n.t(:game_rule, scope: :even))
         end
 
         def run

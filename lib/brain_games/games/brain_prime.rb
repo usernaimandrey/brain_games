@@ -7,7 +7,7 @@ module BrainGames
     class BrainPrime
       class << self
         def show_game_rule
-          puts('Answer "yes" if given number is prime. Otherwise answer "no".')
+          puts(I18n.t(:game_rule, scope: :prime))
         end
 
         def run

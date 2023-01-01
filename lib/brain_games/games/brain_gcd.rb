@@ -7,7 +7,7 @@ module BrainGames
     class BrainGcd
       class << self
         def show_game_rule
-          puts('Find the greatest common divisor of given numbers.')
+          puts(I18n.t(:game_rule, scope: :gcd))
         end
 
         def run

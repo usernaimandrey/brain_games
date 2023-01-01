@@ -1,0 +1,18 @@
+en:
+  greating: Welcome to the Brain Games!
+  acquaintance: 'May I have your name?: '
+  personal_greating: Hello %{name}!
+  question: "Question: %{question} "
+  answer: "Your answer: %{answer} "
+  correct: Correct!
+  no_correct: "%{answer} is wrong answer ;(. Correct answer was %{right_answer}.\nLet's try again, %{name}!"
+  calc:
+    game_rule: 'What is the result of the expression?'
+  even:
+    game_rule: 'Answer "yes" if the number is even, otherwise answer "no".'
+  gcd:
+    game_rule: 'Find the greatest common divisor of given numbers.'
+  prime:
+    game_rule: 'Answer "yes" if given number is prime. Otherwise answer "no".'
+  progression:
+    game_rule: 'What number is missing in the progression?'

@@ -7,7 +7,7 @@ module BrainGames
     class BrainProgression
       class << self
         def show_game_rule
-          puts('What number is missing in the progression?')
+          puts(I18n.t(:game_rule, scope: :progression))
         end
 
         def run
