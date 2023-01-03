@@ -22,13 +22,19 @@ Gem::Specification.new do |spec|
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
-  spec.files = Dir.chdir(__dir__) do
-    `git ls-files -z`.split("\x0").reject do |f|
-      (f == __FILE__) || f.match(%r{\A(?:(?:bin|test|spec|features)/|\.(?:git|travis|circleci)|appveyor)})
-    end
-  end
+  # spec.files = Dir.chdir(__dir__) do
+  #   `git ls-files -z`.split("\x0").reject do |f|
+  #     (f == __FILE__) || f.match(%r{\A(?:(?:bin|test|spec|features)/|\.(?:git|travis|circleci)|appveyor)})
+  #   end
+  # end
+
+  spec.files = Dir.glob('{lib,man,exe}/**/*', File::FNM_DOTMATCH).reject { |f| File.directory?(f) }
+  # Include the CHANGELOG.md, LICENSE.md, README.md manually
+  spec.files += %w[LICENSE.txt README.md]
+  # include the gemspec itself because warbler breaks w/o it
+  spec.files += %w[brain_games.gemspec]
   spec.bindir = 'exe'
-  spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
+  spec.executables = 'brain_games'
   spec.require_paths = ['lib']
 
   # Uncomment to register a new dependency of your gem

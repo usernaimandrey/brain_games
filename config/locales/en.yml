@@ -5,6 +5,7 @@ en:
   question: "Question: %{question} "
   answer: "Your answer: %{answer} "
   correct: Correct!
+  goodbye: "Congratulations, %{name}!"
   no_correct: "%{answer} is wrong answer ;(. Correct answer was %{right_answer}.\nLet's try again, %{name}!"
   calc:
     game_rule: 'What is the result of the expression?'

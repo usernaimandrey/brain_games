@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    brain_games (0.1.0)
+    brain_games (0.1.1)
 
 GEM
   remote: https://rubygems.org/

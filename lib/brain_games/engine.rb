@@ -33,7 +33,7 @@ module BrainGames
           return
         end
       end
-      puts("Congratulations, #{name}!")
+      puts(I18n.t(:goodbye, name: name))
     end
   end
 end

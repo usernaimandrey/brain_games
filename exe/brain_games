@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+base_path = File.expand_path('../lib', __dir__)
+
+if File.exist?(base_path)
+  require_relative '../lib/brain_games'
+  require_relative '../lib/brain_games/cli'
+else
+  require 'brain_games'
+end
+
+args = BrainGames::Cli.run(ARGV)
+
+BrainGames.play_game(args)

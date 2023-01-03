@@ -12,9 +12,8 @@ loader.setup
 
 module BrainGames
   class << self
-    def play_game(game_name)
-      class_game = Object.const_get "BrainGames::Games::Brain#{game_name.capitalize}"
-      puts class_game
+    def play_game(args)
+      class_game = Object.const_get "BrainGames::Games::Brain#{args.game_name.capitalize}"
       game = Engine.new(class_game)
       game.run
     end

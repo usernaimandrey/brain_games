@@ -14,8 +14,14 @@ Gemspec/RequiredRubyVersion:
 Metrics/MethodLength:
   Enabled: false
 
-Metrics/LineLength:
+Layout/LineLength:
   Max: 120
+
+Metrics/BlockLength:
+  Max: 40
 
 Metrics/AbcSize:
   Enabled: false
+
+Naming/HeredocDelimiterNaming:
+  ForbiddenDelimiters: []
