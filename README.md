@@ -2,9 +2,17 @@
 
 [![CI](https://github.com/usernaimandrey/brain_games/actions/workflows/main.yml/badge.svg)](https://github.com/usernaimandrey/brain_games/actions/workflows/main.yml)
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/brain_gemes`. To experiment with that code, run `bin/console` for an interactive prompt.
+## **Brain Games This is a collection of 5 games:**
 
-TODO: Delete this and the text above, and describe your gem
+1. Brain: Even - guess even or not even number
+
+2. Brain: Calc - test your basic math skills
+
+3. Brain: GCD - find the greatest common divisor
+
+4. Brain: Prime - count a prime number or not
+
+5. Brain: Progression - write the missing number in progression
 
 ## Installation
 
@@ -16,9 +24,39 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
     $ gem install brain_gemes
 
+or
+
+clone this repository
+
+```shell
+$ git clone https://github.com/usernaimandrey/brain_games.git
+```
+
+at the root of the project
+
+```
+$ make build
+```
+
+and play games
+
+```
+$ barin_games -g or --game=NAME -l --language=LANGUAGE
+```
+
 ## Usage
 
-TODO: Write usage instructions here
+How paly:
+
+### Options:
+
+[![asciicast](https://asciinema.org/a/v5lrBYirDiHOUpulk4obnSugN.svg)](https://asciinema.org/a/v5lrBYirDiHOUpulk4obnSugN)
+
+### Play brain even on english and russion:
+
+[![asciicast](https://asciinema.org/a/549554.svg)](https://asciinema.org/a/549554)
+
+The list of available games can be viewed by calling the --rulle option
 
 ## Development
 
