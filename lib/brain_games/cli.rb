@@ -6,6 +6,11 @@ require_relative 'version'
 module BrainGames
   class Cli
     OPTIONS = Struct.new(:lang, :game_name)
+
+    LANGUAGE = %w[en ru].freeze
+
+    GAMES = %w[clac even gcd prime progression].freeze
+
     class << self
       def run(options)
         args = OPTIONS.new
@@ -13,13 +18,27 @@ module BrainGames
         opt_parser = OptionParser.new do |opts|
           opts.banner = 'Usage: brain_games | Использование brain_games [options]'
 
-          opts.on('-n', '--name=NAME', 'Game name | Имя игры') do |n|
-            args.game_name = n
+          opts.on('-g', '--game=NAME', 'Game name | Имя игры') do |n|
+            if GAMES.include?(n)
+              args.game_name = n
+            else
+              puts(<<-EOF
+                Такой игры пока нет, доступные игры и правила можно посмотреть вызвав --rulles
+                There are no such games yet, available games and rules can be viewed by calling --rulles
+              EOF
+                  )
+              exit
+            end
           end
 
           opts.on('-l', '--lang=LANGUAGE[en ru]',
                   'Language game, default english | Язык игры, по умолчанию английский') do |lang|
-            args.lang = lang
+            if LANGUAGE.include?(lang)
+              args.lang = lang
+            else
+              puts('Check option, language may be en or ru | Проверьте опцию, язык может быть en или ru')
+              exit
+            end
           end
 
           opts.on('-v', '--version', 'Version app | Версия приложения') do

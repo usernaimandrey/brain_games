@@ -18,10 +18,10 @@ Layout/LineLength:
   Max: 120
 
 Metrics/BlockLength:
-  Max: 40
+  Max: 50
 
 Metrics/AbcSize:
-  Enabled: false
+  Max: 50
 
 Naming/HeredocDelimiterNaming:
   ForbiddenDelimiters: []

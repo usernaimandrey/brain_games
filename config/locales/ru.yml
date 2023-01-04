@@ -1,0 +1,19 @@
+ru:
+  greating: Добро пожаловать в игры разума!
+  acquaintance: 'Можно узнать ваше имя?: '
+  personal_greating: Здравствуйте %{name}!
+  question: "Вопрос: %{question} "
+  answer: "Ваш ответ: %{answer} "
+  correct: Верно!
+  goodbye: "Поздравляю, %{name}!"
+  no_correct: "%{answer} не верный овет ;(. Правельный ответ будет %{right_answer}.\nПопробуй поиграть еще, %{name}!"
+  calc:
+    game_rule: 'Какой резултат вырожения?'
+  even:
+    game_rule: 'Ответь "yes" если число четное, или ответь "no".'
+  gcd:
+    game_rule: 'Найдите наибольший общий делитель данных чисел.'
+  prime:
+    game_rule: 'Ответь "yes" если число простое или ответь  "no".'
+  progression:
+    game_rule: 'Какой член прогресс пропущен?'

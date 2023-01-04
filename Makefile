@@ -12,3 +12,6 @@ test:
 
 console:
 	bin/console
+
+build:
+	rake install
