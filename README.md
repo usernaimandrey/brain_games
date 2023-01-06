@@ -46,7 +46,7 @@ $ barin_games -g or --game=NAME -l --language=LANGUAGE
 
 ## Usage
 
-How paly:
+How palay:
 
 ### Options:
 
