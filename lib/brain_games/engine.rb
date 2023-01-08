@@ -17,9 +17,9 @@ module BrainGames
 
       name = $stdin.gets.chop
       puts(I18n.t(:personal_greating, name: name))
-      game.show_game_rule
+      puts(game.game_rule)
       ROUNDS.times do
-        question, right_answer = game.run
+        question, right_answer = game.question_right_answer
 
         print(I18n.t(:question, question: question))
 

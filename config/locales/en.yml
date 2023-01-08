@@ -1,4 +1,5 @@
 en:
+  no_exist_game: Submit the name of the game. Program terminated!
   greating: Welcome to the Brain Games!
   acquaintance: 'May I have your name?: '
   personal_greating: Hello %{name}!

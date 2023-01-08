@@ -13,6 +13,10 @@ loader.setup
 module BrainGames
   class << self
     def play_game(args)
+      if args.game_name.nil?
+        puts(I18n.t(:no_exist_game))
+        return
+      end
       I18n.locale = args.lang if args.lang
       class_game = Object.const_get "BrainGames::Games::Brain#{args.game_name.capitalize}"
       game = Engine.new(class_game)

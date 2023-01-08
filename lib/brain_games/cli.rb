@@ -18,9 +18,9 @@ module BrainGames
         opt_parser = OptionParser.new do |opts|
           opts.banner = 'Usage: brain_games | Использование brain_games [options]'
 
-          opts.on('-g', '--game=NAME', 'Game name | Имя игры') do |n|
-            if GAMES.include?(n)
-              args.game_name = n
+          opts.on('-g', '--game=NAME', 'Game name | Имя игры') do |g|
+            if GAMES.include?(g)
+              args.game_name = g
             else
               puts(<<-EOF
                 Такой игры пока нет, доступные игры и правила можно посмотреть вызвав --rulles

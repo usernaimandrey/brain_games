@@ -6,11 +6,11 @@ module BrainGames
   module Games
     class BrainGcd
       class << self
-        def show_game_rule
-          puts(I18n.t(:game_rule, scope: :gcd))
+        def game_rule
+          I18n.t(:game_rule, scope: :gcd)
         end
 
-        def run
+        def question_right_answer
           num_one = Utils.generate_random(1, 100)
           num_two = Utils.generate_random(1, 100)
           number_lesser, number_bigest = [num_one, num_two].minmax

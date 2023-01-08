@@ -8,11 +8,11 @@ module BrainGames
       class << self
         OPERATIONS = %w[+ - *].freeze
 
-        def show_game_rule
-          puts(I18n.t(:game_rule, scope: :calc))
+        def game_rule
+          I18n.t(:game_rule, scope: :calc)
         end
 
-        def run
+        def question_right_answer
           left_operand = Utils.generate_random(1, 100)
           right_operand = Utils.generate_random(1, 100)
           operation = OPERATIONS[Utils.generate_random(0, 2)]

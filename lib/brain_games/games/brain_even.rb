@@ -6,11 +6,11 @@ module BrainGames
   module Games
     class BrainEven
       class << self
-        def show_game_rule
-          puts(I18n.t(:game_rule, scope: :even))
+        def game_rule
+          I18n.t(:game_rule, scope: :even)
         end
 
-        def run
+        def question_right_answer
           question = Utils.generate_random(1, 100)
           right_answer = even?(question) ? 'yes' : 'no'
 

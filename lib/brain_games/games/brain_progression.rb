@@ -6,11 +6,11 @@ module BrainGames
   module Games
     class BrainProgression
       class << self
-        def show_game_rule
+        def game_rule
           puts(I18n.t(:game_rule, scope: :progression))
         end
 
-        def run
+        def question_right_answer
           elements_count = Utils.generate_random(5, 15)
           step_progression = Utils.generate_random(2, 10)
           element_hidden = Utils.generate_random(0, elements_count)
