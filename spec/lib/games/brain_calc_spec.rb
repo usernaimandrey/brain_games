@@ -9,13 +9,13 @@ RSpec.describe 'BrainCalc' do
 
   it 'success' do
     expect do
-      StdinSub.simulate_stdin(answers_success) { game.run } 
+      StdinSub.simulate_stdin(answers_success) { game.run }
     end.to output(expected_success).to_stdout
   end
 
   it 'failure' do
     expect do
-      StdinSub.simulate_stdin(answers_failure) { game.run } 
+      StdinSub.simulate_stdin(answers_failure) { game.run }
     end.to output(expected_failure).to_stdout
   end
 end
