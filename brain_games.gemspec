@@ -5,7 +5,7 @@ require_relative 'lib/brain_games/version'
 Gem::Specification.new do |spec|
   spec.name = 'brain_games'
   spec.version = BrainGames::VERSION
-  spec.authors = ['usernaimandrey']
+  spec.authors = ['Andrey']
   spec.email = ['anshlyapnikov@yandex.ru']
 
   spec.summary = 'This is a CLI APP Brain Games'
@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.license = 'MIT'
   spec.required_ruby_version = '>= 2.6.0'
 
-  spec.metadata['allowed_push_host'] = ''
+  # spec.metadata['allowed_push_host'] = ''
 
   spec.metadata['homepage_uri'] = spec.homepage
   spec.metadata['source_code_uri'] = 'https://github.com/usernaimandrey/brain_games'
