@@ -1,0 +1,6 @@
+Welcome to the Brain Games!
+May I have your name?: Hello Andrey!
+What is the result of the expression?
+Question: 3 * 2 Your answer: 7 
+7 is wrong answer ;(. Correct answer was 6.
+Let's try again, Andrey!

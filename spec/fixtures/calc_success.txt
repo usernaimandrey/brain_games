@@ -1,0 +1,10 @@
+Welcome to the Brain Games!
+May I have your name?: Hello Andrey!
+What is the result of the expression?
+Question: 3 * 2 Your answer: 6 
+Correct!
+Question: 3 * 2 Your answer: 6 
+Correct!
+Question: 3 * 2 Your answer: 6 
+Correct!
+Congratulations, Andrey!
