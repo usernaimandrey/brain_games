@@ -3,4 +3,4 @@
 
 require 'brain_games'
 
-system('git tag v0.1.7 && git push --tags --no-verify')
+system('git tag v0.1.8 && git push --tags --no-verify')
